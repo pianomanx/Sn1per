@@ -70,16 +70,25 @@ if [[ $UBUNTU_CHECK == "DISTRIB_ID=Ubuntu" ]]; then
 	apt install golang
 fi
 
+echo -e "$OKBLUE[*]$RESET Installing base dependencies...$RESET"
+apt install -y sudo gpg curl
+
+echo -e "$OKBLUE[*]$RESET Updating repositories... $OKBLUE[$RESET${OKGREEN}OK${RESET}$OKBLUE]$RESET"
+curl -fsSL https://archive.kali.org/archive-key.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kali.gpg --yes
+
 echo -e "$OKBLUE[*]$RESET Installing package dependencies...$RESET"
 apt update
-apt install -y python3-paramiko
 apt install -y nfs-common
 apt install -y nodejs
 apt install -y wafw00f
 apt install -y xdg-utils
 apt install -y ruby
 apt install -y rubygems
-apt install -y python
+apt install -y python2
+apt install -y python3
+apt install -y python3-paramiko
+apt purge -y python3-pip
+apt install -y python3-pip
 apt install -y dos2unix
 apt install -y aha
 apt install -y libxml2-utils
@@ -90,8 +99,8 @@ apt install -y whois
 apt install -y dnsrecon
 apt install -y curl
 apt install -y nmap
-apt install -y php7.4
-apt install -y php7.4-curl
+apt install -y php8.2
+apt install -y php8.2-curl
 apt install -y hydra
 apt install -y sqlmap
 apt install -y nbtscan
@@ -104,9 +113,6 @@ apt install -y adb
 apt install -y xsltproc
 apt install -y ldapscripts
 apt install -y libssl-dev 2> /dev/null
-apt install -y python-pip 2> /dev/null
-apt purge -y python3-pip
-apt install -y python3-pip
 apt install -y xmlstarlet
 apt install -y net-tools
 apt install -y p7zip-full
@@ -119,13 +125,15 @@ apt install -y urlcrazy
 apt install -y iputils-ping
 apt install -y enum4linux
 apt install -y dnsutils
+apt install -y wtmpdb
 
 echo -e "$OKBLUE[*]$RESET Installing Metasploit...$RESET"
+rm -f /usr/share/keyrings/metasploit-framework.gpg 2> /dev/null
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > /tmp/msfinstall
 chmod 755 /tmp/msfinstall
 /tmp/msfinstall
 
-pip3 install dnspython colorama tldextract urllib3 ipaddress requests
+pip3 install dnspython colorama tldextract urllib3 ipaddress requests --break-system-packages
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
 echo -e "$OKBLUE[*]$RESET Installing gem dependencies...$RESET"
@@ -140,7 +148,7 @@ echo -e "$OKBLUE[*]$RESET Setting up Ruby...$RESET"
 dpkg-reconfigure ruby
 
 echo -e "$OKBLUE[*]$RESET Upgrading Pip...$RESET"
-python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade pip --break-system-packages
 
 echo -e "$OKBLUE[*]$RESET Cleaning up old extensions...$RESET"
 rm -Rf $PLUGINS_DIR 2> /dev/null
@@ -202,13 +210,13 @@ wget https://github.com/maurosoria/dirsearch/archive/refs/tags/v0.4.2.tar.gz
 tar -zxvf v0.4.2.tar.gz
 mv dirsearch-0.4.2/ dirsearch/
 cd dirsearch/
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt --break-system-packages
 cd $PLUGINS_DIR
 
 # SECRETFINDER INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing SecretFinder...$RESET"
 git clone https://github.com/m4ll0k/SecretFinder.git secretfinder
-pip install -r $PLUGINS_DIR/secretfinder/requirements.txt
+pip install -r $PLUGINS_DIR/secretfinder/requirements.txt --break-system-packages
 
 # LINKFINDER INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing LinkFinder...$RESET"
@@ -220,25 +228,25 @@ cd ..
 # GITGRABER INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing GitGrabber...$RESET"
 git clone https://github.com/hisxo/gitGraber.git
-pip3 install -r $PLUGINS_DIR/gitGraber/requirements.txt 2> /dev/null
+pip3 install -r $PLUGINS_DIR/gitGraber/requirements.txt --break-system-packages 2> /dev/null
 
 # CENSYS-SUBDOMAIN-FINDER INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing Censys-Subdomain-Finder...$RESET"
 git clone https://github.com/christophetd/censys-subdomain-finder.git
-pip3 install -r $PLUGINS_DIR/censys-subdomain-finder/requirements.txt
+pip3 install -r $PLUGINS_DIR/censys-subdomain-finder/requirements.txt --break-system-packages
 
 # DNSCAN INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing DNScan...$RESET"
 git clone https://github.com/rbsec/dnscan.git
-pip3 install -r $PLUGINS_DIR/dnscan/requirements.txt
+pip3 install -r $PLUGINS_DIR/dnscan/requirements.txt --break-system-packages
 
 # ALTDNS INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing AltDNS...$RESET"
 git clone https://github.com/infosec-au/altdns.git
 cd altdns
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt --break-system-packages
 python3 setup.py install
-pip3 install py-altdns
+pip3 install py-altdns --break-system-packages
 cd ..
 
 # MASSDNS INSTALLER
@@ -252,7 +260,7 @@ cd ..
 echo -e "$OKBLUE[*]$RESET Installing DNSGen...$RESET"
 git clone https://github.com/ProjectAnte/dnsgen
 cd dnsgen
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt --break-system-packages
 python3 setup.py install
 cd ..
 
@@ -265,7 +273,8 @@ nuclei
 
 # INSTALL WEBTECH
 echo -e "$OKBLUE[*]$RESET Installing WebTech...$RESET"
-pip3 install -U webtech
+pip3 install -U webtech --break-system-packages
+mkdir -p /root/.local/share/webtech
 
 # INSTALL SUBJACK
 echo -e "$OKBLUE[*]$RESET Installing SubJack...$RESET"
@@ -323,6 +332,10 @@ echo -e "$OKBLUE[*]$RESET Installing Vulners...$RESET"
 cd /usr/share/nmap/scripts/
 rm -f /usr/share/nmap/scripts/vulners.nse
 wget https://raw.githubusercontent.com/vulnersCom/nmap-vulners/master/vulners.nse
+# ensure readable permissions
+sudo chmod 644 /usr/share/nmap/scripts/vulners.nse
+# update Nmap's script DB so --script-help and autocompletion see it
+sudo nmap --script-updatedb
 
 # GOBUSTER INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing GoBuster...$RESET"
@@ -341,11 +354,11 @@ cd ..
 
 # H8MAIL INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing H8Mail...$RESET"
-pip3 install h8mail 2> /dev/null
+pip3 install h8mail --break-system-packages 2> /dev/null
 
 # CMSMAP INSTALLER
 echo -e "$OKBLUE[*]$RESET Installing CMSMap...$RESET"
-cd $PLUGINS_DIR/CMSmap/ && pip3 install . && python3 setup.py install
+cd $PLUGINS_DIR/CMSmap/ && pip3 install .  --break-system-packages && python3 setup.py install
 
 cd $PLUGINS_DIR
 
@@ -446,6 +459,9 @@ cp -f $PLUGINS_DIR/Findsploit/findsploit.desktop /usr/share/kali-menu/applicatio
 mkdir -p /usr/share/sniper/loot/workspaces/ 2> /dev/null
 ln -fs /usr/share/sniper/loot/workspaces/ /home/kali/Desktop/workspaces 2> /dev/null
 ln -fs /usr/share/sniper/loot/workspaces/ /root/Desktop/workspaces 2> /dev/null
+
+echo -e "$OKBLUE[*]$RESET Cleaning up installation files... $RESET"
+rm -Rf /tmp/arachni* /tmp/gobuster* /tmp/msfinstall /tmp/openssl.cnf 2> /dev/null
 
 echo -e "$OKRED[>]$RESET Done! $RESET"
 echo -e "$OKRED[>]$RESET To run, type 'sniper'! $RESET"
