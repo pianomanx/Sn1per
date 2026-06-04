@@ -1,4 +1,4 @@
-[![Sn1per](https://sn1persecurity.com/wordpress/wp-content/uploads/2026/04/sn1per-professional-2026-hero-banner.png)](https://sn1persecurity.com)
+[![Sn1per](https://sn1persecurity.com/wordpress/wp-content/uploads/2026/04/sn1per-professional-2026-hero-banner.png)](https://sn1persecurity.com/wordpress/product/sn1per-professional-2026-license/)
 
 [![GitHub release](https://img.shields.io/github/release/1N3/Sn1per.svg)](https://github.com/1N3/Sn1per/releases)
 [![License](https://img.shields.io/github/license/1N3/Sn1per.svg)](https://github.com/1N3/Sn1per/blob/master/LICENSE.md)
@@ -11,7 +11,7 @@
 [![GitHub Followers](https://img.shields.io/github/followers/1N3.svg?style=social&label=Follow)](https://github.com/1N3)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/xer0dayz.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=xer0dayz)
 
-[[Products](https://sn1persecurity.com/wordpress/)] [[Solutions](https://sn1persecurity.com/wordpress/use-cases/)] [[About](https://sn1persecurity.com/wordpress/about/)] [[News](https://sn1persecurity.com/wordpress/blog/)] [[Contact](https://sn1persecurity.com/wordpress/home/contact/)] [[Demo](https://sn1persecurity.com/wordpress/#video)] [[Pricing](https://sn1persecurity.com/wordpress/#pricing)] [[Shop](https://sn1persecurity.com/wordpress/shop/)]
+[[Products](https://sn1persecurity.com/wordpress/shop/)] [[Solutions](https://sn1persecurity.com/wordpress/use-cases/)] [[About](https://sn1persecurity.com/wordpress/about/)] [[News](https://sn1persecurity.com/wordpress/blog/)] [[Contact](https://sn1persecurity.com/wordpress/home/contact/)] [[Demo](https://sn1persecurity.com/wordpress/#video)] [[Pricing](https://sn1persecurity.com/wordpress/product/sn1per-professional-2026-license/)] [[Shop](https://sn1persecurity.com/wordpress/shop/)]
 
 # Sn1per — The Offensive-Security Platform for Modern Teams
 
@@ -97,7 +97,7 @@ The Community Edition is free and lives in this repository. The Professional and
 | Total Assets | 150 | 500+ |
 | Licensed Systems | 1 | 1 |
 
-[Buy a Sn1per Professional license →](https://sn1persecurity.com/wordpress/product/sn1per-professional-2026-license/) · [Get an Enterprise quote →](https://sn1persecurity.com/wordpress/)
+[Buy a Sn1per Professional license →](https://sn1persecurity.com/wordpress/product/sn1per-professional-2026-license/) · [Get an Enterprise quote →](https://sn1persecurity.com/wordpress/request-a-quote/)
 
 ## Install
 
