@@ -11,7 +11,7 @@
 [![GitHub Followers](https://img.shields.io/github/followers/1N3.svg?style=social&label=Follow)](https://github.com/1N3)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/xer0dayz.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=xer0dayz)
 
-[[Products](https://sn1persecurity.com/wordpress/shop/)] [[Solutions](https://sn1persecurity.com/wordpress/use-cases/)] [[About](https://sn1persecurity.com/wordpress/about/)] [[News](https://sn1persecurity.com/wordpress/blog/)] [[Contact](https://sn1persecurity.com/wordpress/home/contact/)] [[Demo](https://sn1persecurity.com/wordpress/#video)] [[Pricing](https://sn1persecurity.com/wordpress/product/sn1per-professional-2026-license/)] [[Shop](https://sn1persecurity.com/wordpress/shop/)]
+[[Products](https://sn1persecurity.com/wordpress/shop/)] [[Attack Surface Management](https://sn1persecurity.com/wordpress/use-cases/)] [[About Sn1per](https://sn1persecurity.com/wordpress/about/)] [[News](https://sn1persecurity.com/wordpress/blog/)] [[Contact](https://sn1persecurity.com/wordpress/home/contact/)] [[Demo](https://sn1persecurity.com/wordpress/#video)] [[Pricing](https://sn1persecurity.com/wordpress/product/sn1per-professional-2026-license/)] [[Shop](https://sn1persecurity.com/wordpress/shop/)]
 
 # Sn1per — The Offensive-Security Platform for Modern Teams
 
@@ -26,6 +26,7 @@
 ## Table of Contents
 
 - [About](#about-sn1per)
+- [What Sn1per Is For](#what-sn1per-is-for)
 - [What's New in 2026](#whats-new-in-2026)
 - [Editions & Pricing](#editions--pricing)
 - [Install](#install)
@@ -41,11 +42,19 @@
 
 ## About Sn1per
 
-Sn1per is an offensive-security platform that consolidates reconnaissance, vulnerability scanning, exploitation, and reporting into a single workspace. Built by pentesters since 2015, it ships in three editions — a free open-source Community Edition (this repository), a paid Professional edition for individual operators and small teams, and an Enterprise edition for global SOCs — all backed by the same core scanning engine.
+Sn1per is an offensive-security platform that consolidates reconnaissance, vulnerability scanning, exploitation, and reporting into a single workspace. Built by pentesters since 2015, it ships in three editions — a free Community Edition (source-available, custom EULA — see LICENSE.md) in this repository, a paid Professional edition for individual operators and small teams, and an Enterprise edition for global SOCs — all backed by the same core scanning engine.
 
 Sn1per orchestrates 90+ third-party tools, ships with 600+ exploits and 10,000+ detections, and is used by 500+ teams worldwide. Battle-tested by the community. Built by pentesters, for pentesters.
 
 **500+** Teams · **90+** Integrations · **10,000+** Detections · **600+** Exploits · Trusted since **2015**
+
+## What Sn1per Is For
+
+Sn1per ships as one platform that covers three jobs offensive security teams otherwise stitch together from a dozen tools:
+
+- **[External Attack Surface Management](https://sn1persecurity.com/wordpress/external-attack-surface-management-with-sn1per/)** — continuous discovery, monitoring, and active exploitation of every internet-facing asset your organization owns, including the ones nobody on your team knows about.
+- **[Continuous Attack Surface Management](https://sn1persecurity.com/wordpress/continuous-attack-surface-management-with-sn1per-professional/)** — daily-cadence rescans that diff yesterday's surface against today's so new exposures hit your SOC within hours, not the next quarterly pentest.
+- **[Automated Penetration Testing](https://sn1persecurity.com/wordpress/request-a-trial/)** — 600+ exploits and 10,000+ detections orchestrated as a single workflow, with active verification eliminating the false positives version-only scanners ship as "critical."
 
 ## What's New in 2026
 
@@ -290,7 +299,9 @@ Sn1per ships with native integrations for **90+ tools and services**. Featured p
 - [Integrations](docs/integrations.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [Wiki — full reference](https://github.com/1N3/Sn1per/wiki)
-- [Official documentation](https://sn1persecurity.com/wordpress/documentation/)
+- [Sn1per Documentation Hub](https://sn1persecurity.com/wordpress/documentation/)
+- [Passive Reconnaissance Techniques for Penetration Testers](https://sn1persecurity.com/wordpress/passive-reconnaissance-techniques-for-penetration-testing/)
+- [CVE-2024-21733 — Apache Tomcat HTTP Request Smuggling writeup](https://sn1persecurity.com/wordpress/cve-2024-21733-apache-tomcat-http-request-smuggling/)
 
 ### Configuration & Templates
 
@@ -305,6 +316,7 @@ Sn1per ships with native integrations for **90+ tools and services**. Featured p
 - **[Sn1per Professional 2026 Released](https://sn1persecurity.com/wordpress/sn1per-professional-2026-release/)** — April 26, 2026
 - [Introducing SILENTCHAIN AI Community Edition v1.1.3](https://sn1persecurity.com/wordpress/introducing-silentchain-ai-community-edition-v1-1-3/) — February 11, 2026
 - [Sn1per SE v11.0 Now Available](https://sn1persecurity.com/wordpress/sn1per-se-v11-released/) — January 8, 2026
+- [External Attack Surface Management with Sn1per](https://sn1persecurity.com/wordpress/external-attack-surface-management-with-sn1per/) — background reading on the ASM use case
 
 [All releases & blog posts →](https://sn1persecurity.com/wordpress/blog/)
 
@@ -335,6 +347,6 @@ Pull requests welcome. For substantial changes, open an issue first to discuss t
 
 ## About Sn1perSecurity
 
-Sn1per is built and maintained by [Sn1perSecurity](https://sn1persecurity.com), a small team of pentesters shipping offensive-security tooling since 2015. We focus on the workflows we want to use ourselves — fast recon, ergonomic reporting, honest pricing, and a Community Edition that genuinely keeps up with the commercial editions. If that resonates, [say hi](https://twitter.com/xer0dayz).
+Sn1per is built and maintained by [Sn1perSecurity](https://sn1persecurity.com), the team behind the [Sn1per attack surface management and automated penetration testing platform](https://sn1persecurity.com/wordpress/external-attack-surface-management-with-sn1per/). Small team of pentesters shipping offensive-security tooling since 2015. We focus on the workflows we want to use ourselves — fast recon, ergonomic reporting, honest pricing, and a Community Edition that genuinely keeps up with the commercial editions. If that resonates, [say hi](https://twitter.com/xer0dayz).
 
 **Topics:** `penetration-testing` · `offensive-security` · `attack-surface-management` · `vulnerability-scanner` · `recon` · `osint` · `red-team` · `bug-bounty` · `security-tools`
