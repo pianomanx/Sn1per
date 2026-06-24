@@ -52,9 +52,9 @@ Sn1per orchestrates 90+ third-party tools, ships with 600+ exploits and 10,000+ 
 
 Sn1per ships as one platform that covers three jobs offensive security teams otherwise stitch together from a dozen tools:
 
-- **[External Attack Surface Management](https://sn1persecurity.com/wordpress/external-attack-surface-management-with-sn1per/)** — continuous discovery, monitoring, and active exploitation of every internet-facing asset your organization owns, including the ones nobody on your team knows about.
-- **[Continuous Attack Surface Management](https://sn1persecurity.com/wordpress/continuous-attack-surface-management-with-sn1per-professional/)** — daily-cadence rescans that diff yesterday's surface against today's so new exposures hit your SOC within hours, not the next quarterly pentest.
-- **[Automated Penetration Testing](https://sn1persecurity.com/wordpress/request-a-trial/)** — 600+ exploits and 10,000+ detections orchestrated as a single workflow, with active verification eliminating the false positives version-only scanners ship as "critical."
+- **[External Attack Surface Management](https://sn1persecurity.com/wordpress/external-attack-surface-management-with-sn1per/)** - continuous discovery, monitoring, and active exploitation of every internet-facing asset your organization owns, including the ones nobody on your team knows about.
+- **[Continuous Attack Surface Management](https://sn1persecurity.com/wordpress/continuous-attack-surface-management-with-sn1per-professional/)** - daily-cadence rescans that diff yesterday's surface against today's so new exposures hit your SOC within hours, not the next quarterly pentest.
+- **[Automated Penetration Testing](https://sn1persecurity.com/wordpress/automated-penetration-testing/)** - 600+ exploits and 10,000+ detections orchestrated as a single workflow, with active verification eliminating the false positives version-only scanners ship as "critical."
 
 ## What's New in 2026
 
@@ -313,10 +313,17 @@ Sn1per ships with native integrations for **90+ tools and services**. Featured p
 
 ## News & Releases
 
-- **[Sn1per Professional 2026 Released](https://sn1persecurity.com/wordpress/sn1per-professional-2026-release/)** — April 26, 2026
-- [Introducing SILENTCHAIN AI Community Edition v1.1.3](https://sn1persecurity.com/wordpress/introducing-silentchain-ai-community-edition-v1-1-3/) — February 11, 2026
-- [Sn1per SE v11.0 Now Available](https://sn1persecurity.com/wordpress/sn1per-se-v11-released/) — January 8, 2026
-- [External Attack Surface Management with Sn1per](https://sn1persecurity.com/wordpress/external-attack-surface-management-with-sn1per/) — background reading on the ASM use case
+- **[Sn1per Professional 2026 Released](https://sn1persecurity.com/wordpress/sn1per-professional-2026-release/)** - April 26, 2026
+- [Introducing SILENTCHAIN AI Community Edition v1.1.3](https://sn1persecurity.com/wordpress/introducing-silentchain-ai-community-edition-v1-1-3/) - February 11, 2026
+- [Sn1per SE v11.0 Now Available](https://sn1persecurity.com/wordpress/sn1per-se-v11-released/) - January 8, 2026
+
+### Guides & deep dives (2026)
+
+- [Red Team Attack Surface Management](https://sn1persecurity.com/wordpress/red-team-attack-surface-management/) - running Sn1per as a continuous red-team and adversarial-exposure-validation workflow
+- [Automated Penetration Testing](https://sn1persecurity.com/wordpress/automated-penetration-testing/) - the method, the tooling, and the continuous-testing model
+- [On-Prem External Attack Surface Management](https://sn1persecurity.com/wordpress/best-on-prem-external-attack-surface-management-platform/) - self-hosted, air-gapped ASM with zero data leaving your perimeter
+- [Continuous Attack Surface Testing](https://sn1persecurity.com/wordpress/continuous-attack-surface-testing/) - daily-cadence rescans that diff yesterday's surface against today's
+- [External Attack Surface Management with Sn1per](https://sn1persecurity.com/wordpress/external-attack-surface-management-with-sn1per/) - background reading on the ASM use case
 
 [All releases & blog posts →](https://sn1persecurity.com/wordpress/blog/)
 
@@ -324,7 +331,7 @@ Sn1per ships with native integrations for **90+ tools and services**. Featured p
 
 - **Bugs:** [Open an issue](https://github.com/1N3/Sn1per/issues)
 - **Twitter:** [@xer0dayz](https://twitter.com/xer0dayz)
-- **YouTube:** [Sn1per Security](https://www.youtube.com/c/Sn1perSecurity/videos)
+- **YouTube:** [Sn1per Security](https://www.youtube.com/c/Sn1perSecurity/videos) - latest demo: [Continuous Attack Surface Testing](https://youtu.be/GBr7vjbGRBA)
 - **Email (Pro / Enterprise customers):** see your license email
 
 ## Contributing
